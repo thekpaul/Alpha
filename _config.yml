@@ -1,16 +1,10 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: "Paul Kim"
 email: "thekpaul@outlook.com"
-description: "The Official Portfolio of Paul Kim the Programmer"
+description: "A Free Developer"
 baseurl: "alpha"
 url: "https://thekpaul.github.io/"
+permalink: "/:path"
 
 # Logo settings
 logo-image-url:
@@ -23,3 +17,18 @@ instagram_username: "https://www.instagram.com/the_kpaul"
 
 # Build settings
 markdown: kramdown
+
+# Language Settings
+defaults:
+  -
+    scope:
+      path: "en"
+      type: "pages"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "ko"
+      type: "pages"
+    values:
+      lang: "ko"
