@@ -9,18 +9,17 @@
 title: "Paul Kim"
 email: "thekpaul@outlook.com"
 description: "The Official Portfolio of Paul Kim the Programmer"
-baseurl: ""
-url: "https://thekpaul.github.io"
+baseurl: "alpha"
+url: "https://thekpaul.github.io/"
 
 # Logo settings
 logo-image-url:
 font-awesome-icon-logo:
 
 # Social settings
-github_username: "thekpaul"
-twitter_username:
-facebook_URL: "https://www.facebook.com/profile.php?id=100023550311260"
-instagram_username: "the_kpaul"
+github_url: "https://www.github.com/thekpaul"
+facebook_url: "https://www.facebook.com/profile.php?id=100023550311260"
+instagram_username: "https://www.instagram.com/the_kpaul"
 
 # Build settings
 markdown: kramdown
