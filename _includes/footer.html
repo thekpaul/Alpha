@@ -1,18 +1,21 @@
 <!-- Footer -->
 <footer id="footer">
-	<ul class="icons">
-		<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-		<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-		<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-		<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-		<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-		<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-	</ul>
-	<ul class="copyright">
-		<li>&copy; {{ site.title }}. All rights reserved.</li>
-		<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-		<li>Jekyll integration: <a href="http://andrewbanchi.ch">Andrew Banchich</a></li>
-	</ul>
+  <ul class="icons">
+    <li><a href="{{ site.facebook_url}}" class="icon fa-facebook">
+      <span class="label">Facebook</span></a></li>
+    <li><a href="{{ site.instagram_url}}" class="icon fa-instagram">
+      <span class="label">Instagram</span></a></li>
+    <li><a href="{{ site.github_url}}" class="icon fa-github">
+      <span class="label">Github</span></a></li>
+  </ul>
+  <ul class="copyright">
+    <li>&copy; {{ site.title }}. All rights reserved.</li>
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Jekyll integration: <a href="http://andrewbanchi.ch">Andrew Banchich</a></li>
+    {% if page.collection == "ko" %}
+      <li>이 페이지에는 네이버에서 제공한 나눔글꼴이 적용되어 있습니다.</li>
+    {% endif %}
+  </ul>
 </footer>
 
 </div>
