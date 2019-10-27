@@ -4,23 +4,23 @@
     <li>
       <a href="#" class="icon fa-angle-down">Layouts</a>
       <ul>
-        <li><a href="/{{ page.lang }}/generic">Generic</a></li>
-        <li><a href="/{{ page.lang }}/contact">Contact</a></li>
-        <li><a href="/{{ page.lang }}/elements">Elements</a></li>
+        <li><a href="{{ site.home }}{{ page.lang }}/generic">Generic</a></li>
+        <li><a href="{{ site.home }}{{ page.lang }}/contact">Contact</a></li>
+        <li><a href="{{ site.home }}{{ page.lang }}/elements">Elements</a></li>
         <li><a href="#">Submenu</a>
           <ul>
-            <li><a href="{{ page.lang }}/">Option One</a></li>
-            <li><a href="{{ page.lang }}/">Option Two</a></li>
-            <li><a href="{{ page.lang }}/">Option Three</a></li>
-            <li><a href="{{ page.lang }}/">Option Four</a></li>
+            <li><a href="{{ site.home }}{{ page.lang }}/">Option One</a></li>
+            <li><a href="{{ site.home }}{{ page.lang }}/">Option Two</a></li>
+            <li><a href="{{ site.home }}{{ page.lang }}/">Option Three</a></li>
+            <li><a href="{{ site.home }}{{ page.lang }}/">Option Four</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    {% if page.lang == "en" %}
-      <li><a href="/en/" class="button">Change Language</a></li>
+    {% if page.lang == "ko" %}
+      <li><a href="{{ site.home }}en/" class="button">Change Language</a></li>
     {% else %}
-      <li><a href="/ko/" class="button">Change Language</a></li>
+      <li><a href="{{ site.home }}ko/" class="button">Change Language</a></li>
     {% endif %}
   </ul>
 </nav>
