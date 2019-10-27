@@ -1,69 +1,183 @@
 ---
-layout: default
-title: Home
+layout: null
 ---
 
-<section class="box special">
-	<header class="major">
-		<h2>Introducing the ultimate mobile app
-		<br />
-		for doing stuff with your phone</h2>
-		<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br />
-		adipiscing nunc adipiscing. Condimentum turpis massa.</p>
-	</header>
-	<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
-</section>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <script src="https://kit.fontawesome.com/3beb87e8d7.js"></script>
+  <title>{{ site.title }}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/ie/html5shiv.js">
+  </script><![endif]-->
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/main.css" />
+  <!--[if lte IE 8]><link rel="stylesheet"
+    href="{{ site.url }}{{ site.baseurl }}/assets/css/ie8.css" />
+  <![endif]-->
+  <!--[if IE]><link rel="shortcut icon" href="/logos/favicon.io"><![endif]-->
+  <link rel="icon" href="/logos/favicon.png">
+  <link rel="apple-touch-icon" href="/logos/apple-touch-icon.png">
+</head>
 
-<section class="box special features">
-	<div class="features-row">
-		<section>
-			<span class="icon major fa-bolt accent2"></span>
-			<h3>Magna etiam</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-		<section>
-			<span class="icon major fa-area-chart accent3"></span>
-			<h3>Ipsum dolor</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-	</div>
-	<div class="features-row">
-		<section>
-			<span class="icon major fa-cloud accent4"></span>
-			<h3>Sed feugiat</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-		<section>
-			<span class="icon major fa-lock accent5"></span>
-			<h3>Enim phasellus</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-	</div>
-</section>
+<body class="landing">
+<div id="page-wrapper">
+  <!-- Header -->
+  <header id="header" {% if page.url == "/index.html" %} class="alt"{% endif %}>
+    <h1><a href="index.html">{{ site.title }}</a> {{ site.description }}</h1>
+    <nav id="nav">
+      <ul> <!-- Header Menu Bar -->
+      <li><a href="{{ site.baseurl | prepend: site.url }}">Home</a></li>
+      <li><a href="#" class="icon fa-angle-down">Layouts</a>
+        <ul> <!-- Dropdown Menu -->
+        <li><a href="{{ site.home }}/{{ page.lang }}/generic">Generic</a></li>
+        <li><a href="{{ site.home }}/{{ page.lang }}/contact">Contact</a></li>
+        <li><a href="{{ site.home }}/{{ page.lang }}/elements">Elements</a></li>
+        <li><a href="#">Submenu</a>
+          <ul> <!-- Dropdown Sub_Menu -->
+          <li><a href="{{ site.home }}/{{ page.lang }}/">Option One</a></li>
+          <li><a href="{{ site.home }}/{{ page.lang }}/">Option Two</a></li>
+          <li><a href="{{ site.home }}/{{ page.lang }}/">Option Three</a></li>
+          <li><a href="{{ site.home }}/{{ page.lang }}/">Option Four</a></li>
+          </ul>
+        </li>
+        </ul>
+      </li>
+      {% if page.lang == "en" %}
+        <li><a href="/en/" class="button">Change Language</a></li>
+      {% else %}
+        <li><a href="/ko/" class="button">Change Language</a></li>
+      {% endif %}
+      </ul>
+    </nav>
+  </header>
 
-<div class="row">
-	<div class="6u 12u(narrower)">
-
-		<section class="box special">
-			<span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
-			<h3>Sed lorem adipiscing</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-			<ul class="actions">
-				<li><a href="#" class="button alt">Learn More</a></li>
-			</ul>
-		</section>
-
-	</div>
-	<div class="6u 12u(narrower)">
-
-		<section class="box special">
-			<span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
-			<h3>Accumsan integer</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-			<ul class="actions">
-				<li><a href="#" class="button alt">Learn More</a></li>
-			</ul>
-		</section>
-
-	</div>
+  <!-- Banner -->
+  <section id="banner">
+    <h2>{{ site.title }}</h2>
+    <p>{{ site.description }}</p>
+    <!--
+    <ul class="actions">
+    <li><a href="#" class="button special">Sign Up</a></li>
+    <li><a href="#" class="button">Learn More</a></li>
+    </ul>
+    -->
+  </section>
+  <div class="box">
+    <section class="box special">
+      <header class="major">
+        <h2>Introducing the ultimate mobile app <br />
+        for doing stuff with your phone</h2>
+        <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus
+        nunc ornare<br />adipiscing nunc adipiscing. Condimentum turpi.</p>
+      </header>
+      <span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+    </section>
+    <section class="box special features">
+      <div class="features-row">
+        <section>
+          <span class="icon major fa-bolt accent2"></span>
+          <h3>Magna etiam</h3>
+          <p>Integer volutpat ante et accumsan commophasellus sed aliquam
+          feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore
+          magna aliquam veroeros.</p>
+        </section>
+        <section>
+          <span class="icon major fa-area-chart accent3"></span>
+          <h3>Ipsum dolor</h3>
+          <p>Integer volutpat ante et accumsan commophasellus sed aliquam
+          feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore
+          magna aliquam veroeros.</p>
+        </section>
+      </div>
+      <div class="features-row">
+        <section>
+          <span class="icon major fa-cloud accent4"></span>
+          <h3>Sed feugiat</h3>
+          <p>Integer volutpat ante et accumsan commophasellus sed aliquam
+          feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore
+          magna aliquam veroeros.</p>
+        </section>
+        <section>
+          <span class="icon major fa-lock accent5"></span>
+          <h3>Enim phasellus</h3>
+          <p>Integer volutpat ante et accumsan commophasellus sed aliquam
+          feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore
+          magna aliquam veroeros.</p>
+        </section>
+      </div>
+    </section>
+  <div class="row">
+    <div class="6u 12u(narrower)">
+      <section class="box special">
+        <span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+        <h3>Sed lorem adipiscing</h3>
+        <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat
+        lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna
+        aliquam veroeros.</p>
+        <ul class="actions">
+          <li><a href="#" class="button alt">Learn More</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="6u 12u(narrower)">
+      <section class="box special">
+        <span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+        <h3>Accumsan integer</h3>
+        <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat
+        lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna
+        aliquam veroeros.</p>
+        <ul class="actions">
+          <li><a href="#" class="button alt">Learn More</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <!-- CTA -->
+  <section id="cta">
+    <h2>Sign up for beta access</h2>
+    <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+    <form>
+      <div class="row uniform 50%">
+        <div class="8u 12u(mobilep)">
+          <input type="email" name="email" id="email" placeholder="Email Address" />
+        </div>
+        <div class="4u 12u(mobilep)">
+          <input type="submit" value="Sign Up" class="fit" />
+        </div>
+      </div>
+    </form>
+  </section>
+  <!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
+      <li><a href="{{ site.facebook_url}}" class="icon fa-facebook">
+        <span class="label">Facebook</span></a></li>
+      <li><a href="{{ site.instagram_url}}" class="icon fa-instagram">
+        <span class="label">Instagram</span></a></li>
+      <li><a href="{{ site.github_url}}" class="icon fa-github">
+        <span class="label">Github</span></a></li>
+    </ul>
+    <ul class="copyright">
+      <li>&copy; {{ site.title }}. All rights reserved.</li>
+      <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      <li>Jekyll integration: <a href="http://andrewbanchi.ch">Andrew Banchich</a></li>
+      {% if page.collection == "ko" %}
+        <li>이 페이지에는 네이버에서 제공한 나눔글꼴이 적용되어 있습니다.</li>
+      {% endif %}
+    </ul>
+  </footer>
 </div>
+<!-- Scripts -->
+<script src="{{ site.home }}/assets/js/jquery.min.js"></script>
+<script src="{{ site.home }}/assets/js/jquery.dropotron.min.js"></script>
+<script src="{{ site.home }}/assets/js/jquery.scrollgress.min.js"></script>
+<script src="{{ site.home }}/assets/js/skel.min.js"></script>
+<script src="{{ site.home }}/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="{{ site.home }}/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="{{ site.home }}/assets/js/main.js"></script>
+
+</body>
+</html>
