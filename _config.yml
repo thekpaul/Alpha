@@ -2,8 +2,9 @@
 title: "Paul Kim"
 email: "thekpaul@outlook.com"
 description: "A Free Developer"
-baseurl: "alpha"
+baseurl: "Alpha"
 url: "https://thekpaul.github.io/"
+home: "https://thekpaul.github.io/Alpha" # The Full URL for Site HOME
 permalink: "/:path"
 
 # Logo settings
