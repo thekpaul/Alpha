@@ -1,0 +1,23 @@
+# Sample
+# - title: "<++>"
+#   link: "<++>"
+#   submenu: <++>
+
+- title: "Home"
+  link: ""
+  submenu: false
+
+- title: "About Me"
+  link: "about"
+  submenu: false
+
+- title: "Projects"
+  link: "projects/"
+  submenu:
+  - title: "OverDraw 0.6 for LaTeX"
+    link: "latex-overdraw"
+    submenu: false
+
+- title: "Blog"
+  link: "blog/"
+  submenu: false
