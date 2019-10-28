@@ -19,7 +19,7 @@ title: Projects
       </span>
       <h3>{{ project.en_title }}</h3>
       <p>{{ project.en_description }}</p>
-      <a href="{{ project.link }}" class="button special">Find Out More</a>
+      <a href="/en/projects/{{ project.link }}" class="button special">Find Out More</a>
     </section>
     <section>
       <span class="image featured">
@@ -27,16 +27,20 @@ title: Projects
       </span>
       <h3>{{ project.ko_title }}</h3>
       <p>{{ project.ko_description }}</p>
-      <a href="{{ project.link }}" class="button special">더 알아보기</a>
+      <a href="/ko/projects/{{ project.link }}" class="button special">더 알아보기</a>
     </section>
   </div>
   {% endfor %}
-  <div class="features-row"> <!-- Row of TWO Items Each -->
-    <section>
-      <span class="image featured"><img src="/images.png" alt="" /></span>
-      <h3>Test Title</h3>
-      <p>Test Paragraph</p>
-      <a href="/" class="button special">Find Out More</a>
+  <div class="6u 12u(narrower)">
+
+    <section class="box special">
+      <span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+      <h3>Sed lorem adipiscing</h3>
+      <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+      <ul class="actions">
+        <li><a href="#" class="button alt">Learn More</a></li>
+      </ul>
     </section>
+
   </div>
 </section>
