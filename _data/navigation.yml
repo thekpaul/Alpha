@@ -5,11 +5,9 @@
 
 - title: "Home"
   link: ""
-  submenu: false
 
 - title: "About Me"
   link: "about"
-  submenu: false
 
 - title: "Projects"
   link: "projects/"
@@ -20,4 +18,3 @@
 
 - title: "Blog"
   link: "blog/"
-  submenu: false
