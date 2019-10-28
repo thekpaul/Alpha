@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: OverDraw 0.6 for LaTeX
 ---
 
 CONTENT
