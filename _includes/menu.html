@@ -6,13 +6,13 @@
       <ul>
         {% for item in site.data.navigation %}
         <li><a href="/{{ page.lang }}/{{ item.link }}">{{ item.title }}</a>
-          {% if !item.submenu %}
-          {% else %}
+          {% if item.submenu[0] %}
           <ul>
             {% for sub in item.submenu %}
             <li><a href="/{{ page.lang }}/{{ item.link }}{{ sub.link }}">{{ sub.title }}</a></li>
             {% endfor %}
           </ul>
+          {% else %}
           {% endif %}
         </li>
         {% endfor %}
