@@ -12,35 +12,17 @@ title: Projects
 </section>
 <section class="box special features">
   {% for project in site.data.projects %}
-  <div class="features-row"> <!-- Row of TWO Items Each -->
-    <section>
+  <div class="6u 12u(narrower)">
+    <section class="box special">
       <span class="image featured">
-        <img src="/images/projects/{{ project.image }}" alt="" />
-      </span>
+        <img src="images/projects/{{ project.image }}" alt="" /></span>
       <h3>{{ project.en_title }}</h3>
       <p>{{ project.en_description }}</p>
-      <a href="/en/projects/{{ project.link }}" class="button special">Find Out More</a>
-    </section>
-    <section>
-      <span class="image featured">
-        <img src="/images/projects/{{ project.image }}" alt="" />
-      </span>
-      <h3>{{ project.ko_title }}</h3>
-      <p>{{ project.ko_description }}</p>
-      <a href="/ko/projects/{{ project.link }}" class="button special">더 알아보기</a>
+      <ul class="actions">
+        <li><a href="/en/projects/{{ project.link }}" class="button special">
+          Find Out More</a></li>
+      </ul>
     </section>
   </div>
   {% endfor %}
-  <div class="6u 12u(narrower)">
-
-    <section class="box special">
-      <span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
-      <h3>Sed lorem adipiscing</h3>
-      <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-      <ul class="actions">
-        <li><a href="#" class="button alt">Learn More</a></li>
-      </ul>
-    </section>
-
-  </div>
 </section>
