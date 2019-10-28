@@ -2,18 +2,20 @@
   <ul>
     <li><a href="{{ site.baseurl | prepend: site.url }}">Home</a></li>
     <li>
-      <a href="#" class="icon fa-angle-down">Layouts</a>
+      <a href="#" class="icon fa-angle-down">Menu</a>
       <ul>
-        <li><a href="{{ site.home }}{{ page.lang }}/about">About Me</a></li>
-        <!-- <li><a href="{{ site.home }}{{ page.lang }}/<++>"><++></a></li> -->
-        <li><a href="{{ site.home }}{{ page.lang }}/projects">Projects</a>
+        {% for item in site.data.navigation %}
+        <li><a href="/{{ page.lang }}/{{ item.link }}">{{ item.title }}</a>
+          {% if !item.submenu %}
+          {% else %}
           <ul>
-            <li><a href="{{ site.home }}{{ page.lang }}/projects/<++>">Option One</a></li>
-            <li><a href="{{ site.home }}{{ page.lang }}/projects/<++>">Option Two</a></li>
-            <li><a href="{{ site.home }}{{ page.lang }}/projects/<++>">Option Three</a></li>
-            <li><a href="{{ site.home }}{{ page.lang }}/projects/<++>">Option Four</a></li>
+            {% for sub in item.submenu %}
+            <li><a href="/{{ page.lang }}/{{ item.link }}{{ sub.link }}">{{ sub.title }}</a></li>
+            {% endfor %}
           </ul>
+          {% endif %}
         </li>
+        {% endfor %}
       </ul>
     </li>
     {% if page.lang == "ko" %}
