@@ -14,7 +14,7 @@ title: Projects
   {% assign count = 0 %}
   {% for project in site.data.enprojects %}
   <div class="features-row"> <!-- Row of TWO Items Each -->
-  {% assign left = enproject[count] %}
+  {% assign left = project[count] %}
     <section>
       <span class="image featured">
         <img src="/images/projects/{{ left.pic }}">
@@ -24,7 +24,7 @@ title: Projects
       <a href="{{ left.link }}" class="button special">Find Out More</a>
     </section>
   {% increment count %} {% if count == site.data.enprojects.size %}
-  {% else %} {% assign right = enproject[count] %}
+  {% else %} {% assign right = project[count] %}
     <section>
       <span class="image featured">
         <img src="/images/projects/{{ right.pic }}">
