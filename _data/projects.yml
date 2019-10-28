@@ -3,7 +3,7 @@
 #   ko_title: "<++>"
 #   en_description: "<++>"
 #   ko_description: "<++>"
-#   link: "/projects/<++>"
+#   link: "<++>"
 #   image: "<++>.png"
 
 
@@ -11,5 +11,5 @@
   ko_title: "OverDraw 0.6 for LaTeX"
   en_description: "A LaTeX2e package that helps users to draw over drawings."
   ko_description: "그림 위에 사용자가 그림을 그릴 수 있도록 돕는 LaTeX2e 패키지."
-  link: "/projects/latex-overdraw"
+  link: "latex-overdraw"
   image: "latexoverdraw.png"
