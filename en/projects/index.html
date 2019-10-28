@@ -11,30 +11,32 @@ title: Projects
   <span class="image featured"><img src="/images/pic01.jpg" alt="" /></span>
 </section>
 <section class="box special features">
-  {% assign count = 0 %}
-  {% for project in site.data.enprojects %}
+  {% for project in site.data.projects %}
   <div class="features-row"> <!-- Row of TWO Items Each -->
-  {% assign left = project[count] %}
     <section>
       <span class="image featured">
-        <img src="/images/projects/{{ left.pic }}">
+        <img src="/images/projects/{{ project.image }}" alt="" />
       </span>
-      <h3>{{ left.title }}</h3>
-      <p>{{ left.description }}</p>
-      <a href="{{ left.link }}" class="button special">Find Out More</a>
+      <h3>{{ project.en_title }}</h3>
+      <p>{{ project.en_description }}</p>
+      <a href="{{ project.link }}" class="button special">Find Out More</a>
     </section>
-  {% increment count %} {% if count == site.data.enprojects.size %}
-  {% else %} {% assign right = project[count] %}
     <section>
       <span class="image featured">
-        <img src="/images/projects/{{ right.pic }}">
+        <img src="/images/projects/{{ project.image }}" alt="" />
       </span>
-      <h3>{{ right.title }}</h3>
-      <p>{{ right.description }}</p>
-      <a href="{{ right.link }}" class="button special">Find Out More</a>
+      <h3>{{ project.ko_title }}</h3>
+      <p>{{ project.ko_description }}</p>
+      <a href="{{ project.link }}" class="button special">더 알아보기</a>
     </section>
-  {% increment count %}
-  {% endif %}
   </div>
   {% endfor %}
+  <div class="features-row"> <!-- Row of TWO Items Each -->
+    <section>
+      <span class="image featured"><img src="/images.png" alt="" /></span>
+      <h3>Test Title</h3>
+      <p>Test Paragraph</p>
+      <a href="/" class="button special">Find Out More</a>
+    </section>
+  </div>
 </section>
