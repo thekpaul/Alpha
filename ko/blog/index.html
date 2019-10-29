@@ -1,0 +1,32 @@
+---
+layout: page
+title: Blog
+---
+
+<section class="box special">
+  <header class="major">
+    <h2>My Projects</h2>
+    <p>A List of Blog Entries</p>
+  </header>
+  <span class="image featured"><img src="/images/pic01.jpg" alt="" /></span>
+</section>
+<section class="box special features">
+  {% for cat in site.categories %}
+  {% if cat[0] == page.lang %}
+    {% for post in cat[1] %}
+    <div class="6u 12u(narrower)">
+      <section class="box special">
+        <span class="image featured">
+          <img src="/images/posts/{{ post.image }}" alt="" /></span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description }}</p>
+        <ul class="actions">
+          <li><a href="{{ post.url }}" class="button special">
+            Find Out More</a></li>
+        </ul>
+      </section>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% endfor %}
+</section>
