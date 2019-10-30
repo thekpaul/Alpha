@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!--
 	Alpha by HTML5 UP
 	html5up.net | @ajlkn
@@ -7,19 +6,24 @@
 -->
 
 <html>
-
-    {% include head.html %}
-
+{% include head.html %}
 <body class="landing">
-
-    {% include header.html %}
-    
-    {{ content }}
-    
-    {% include cta.html %}
-    {% include footer.html %}
-
-
+{% include header.html %}
+<!-- Banner -->
+<section id="banner">
+  <h2>{{ site.title }}</h2>
+  <p>{{ site.description }}</p>
+  <!--
+  <ul class="actions">
+    <li><a href="#" class="button special">Sign Up</a></li>
+    <li><a href="#" class="button">Learn More</a></li>
+  </ul>
+  -->
+</section>
+<div class="box">
+{{ content }}
+{% include cta.html %}
+{% include footer.html %}
+</div>
 </body>
-
 </html>
