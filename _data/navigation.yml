@@ -3,9 +3,6 @@
 #   link: "<++>"
 #   submenu: <++>
 
-- title: "Home"
-  link: ""
-
 - title: "About Me"
   link: "about"
 
