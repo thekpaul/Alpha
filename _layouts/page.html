@@ -10,10 +10,19 @@
 {% include head.html %}
 <body>
 {% include header.html %}
-{% if page.featured-image %}
-<span class="image featured"><img src="{{ page.featured-image }}" alt=""></span>
-{% endif %}
-{{ content }}
+<section id="main" class="container">
+<!-- Heading -->
+  <header>
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.description }}</p>
+  </header>
+  {% if page.featured-image %}
+  <span class="image featured"><img src="{{ page.featured-image }}" alt=""></span>
+  {% endif %}
+  <div class="box">
+  {{ content }}
+  </div>
+</section>
 {% include footer.html %}
 </body>
 </html>
