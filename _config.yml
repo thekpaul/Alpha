@@ -26,10 +26,28 @@ defaults:
       path: "en"
       type: "pages"
     values:
+      layout: "page"
       lang: "en"
+  -
+    scope:
+      path: "en"
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "en"
+      author: "Paul Kim"
   -
     scope:
       path: "ko"
       type: "pages"
     values:
+      layout: "page"
       lang: "ko"
+  -
+    scope:
+      path: "ko"
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "ko"
+      author: "Paul Kim"
