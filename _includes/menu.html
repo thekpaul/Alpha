@@ -9,7 +9,8 @@
           {% if item.submenu[0] %}
           <ul>
             {% for sub in item.submenu %}
-            <li><a href="/{{ page.lang }}/{{ item.link }}{{ sub.link }}">{{ sub.title }}</a></li>
+            <li><a href="/{{ page.lang }}/{{ item.link }}{{ sub.link }}">
+              {{ sub.title }}</a></li>
             {% endfor %}
           </ul>
           {% else %}
@@ -19,9 +20,11 @@
       </ul>
     </li>
     {% if page.lang == "ko" %}
-      <li><a href="{{ site.home }}en/" class="button">Change Language</a></li>
+    <li><a href="/en/{{ page.url | slice: 4, page.url.size }}"
+      class="button">Change Language</a></li>
     {% else %}
-      <li><a href="{{ site.home }}ko/" class="button">Change Language</a></li>
+    <li><a href="/ko/{{ page.url | slice: 4, page.url.size }}"
+      class="button">언어 변경</a></li>
     {% endif %}
   </ul>
 </nav>
