@@ -7,24 +7,13 @@
 -->
 
 <html>
-
-    {% include head.html %}
-
+{% include head.html %}
 <body>
-
-    {% include header.html %}
-
-    {% if page.featured-image %}
-    <span class="image featured">
-      <img src="{{ page.featured-image }}" alt="">
-    </span>
-    {% endif %}
-    
-    {{ content }}
-    
-    {% include footer.html %}
-
-
+{% include header.html %}
+{% if page.featured-image %}
+<span class="image featured"><img src="{{ page.featured-image }}" alt=""></span>
+{% endif %}
+{{ content }}
+{% include footer.html %}
 </body>
-
 </html>
