@@ -4,66 +4,68 @@ title: Home
 ---
 
 <section class="box special">
-	<header class="major">
-		<h2>Introducing the ultimate mobile app
-		<br />
-		for doing stuff with your phone</h2>
-		<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br />
-		adipiscing nunc adipiscing. Condimentum turpis massa.</p>
-	</header>
-	<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+  <header class="major">
+    <h2>누리집에 오신 것을 환영합니다</h2>
+    <p>다양한 프로젝트와 블로그의 전시를 위해 GitHub Pages로 구현하고 직접
+    관리하고 있습니다.</p>
+  </header>
+  <span class="image featured"><img src="/images/pic01.jpg" alt="" /></span>
 </section>
 
 <section class="box special features">
-	<div class="features-row">
-		<section>
-			<span class="icon major fa-bolt accent2"></span>
-			<h3>Magna etiam</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-		<section>
-			<span class="icon major fa-area-chart accent3"></span>
-			<h3>Ipsum dolor</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-	</div>
-	<div class="features-row">
-		<section>
-			<span class="icon major fa-cloud accent4"></span>
-			<h3>Sed feugiat</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-		<section>
-			<span class="icon major fa-lock accent5"></span>
-			<h3>Enim phasellus</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-		</section>
-	</div>
+  <header class="major"><h2>주요 링크</h2></header>
+  <div class="features-row">
+    <section>
+      <span class="icon major fa-bolt accent2"></span>
+      <h3>Portfolio</h3>
+      <p>아래 버튼을 통해 한국어 포트폴리오로 입장할 수 있습니다 :</p>
+      <a href="/ko/projects/" class="button special">Portfolio (ENG)</a>
+    </section>
+    <section>
+      <span class="icon major fa-area-chart accent3"></span>
+      <h3>Blog</h3>
+      <p>아래 버튼을 통해 한국어 블로그로 입장할 수 있습니다 :</p>
+      <a href="/ko/blog/" class="button special">Blog (ENG)</a>
+    </section>
+  </div>
+  <div class="features-row">
+    <section>
+      <span class="icon major fa-cloud accent4"></span>
+      <h3>Proceed to GitHub</h3>
+      <p>오픈소스 프로젝트에 대한 현황은 GitHub에서 확인할 수 있습니다 :</p>
+      <a href="{{ site.github_url }}" class="button special">GitHub Profile</a>
+    </section>
+    <section>
+      <span class="icon major fa-lock accent5"></span>
+      <h3>Contact Me</h3>
+      <p>아래 버튼의 링크에서 개인적인 연락을 남길 수 있습니다 :</p>
+      <a href="/ko/contact" class="button special">Contact Me</a>
+    </section>
+  </div>
 </section>
 
+<!--
 <div class="row">
-	<div class="6u 12u(narrower)">
-
-		<section class="box special">
-			<span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
-			<h3>Sed lorem adipiscing</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-			<ul class="actions">
-				<li><a href="#" class="button alt">Learn More</a></li>
-			</ul>
-		</section>
-
-	</div>
-	<div class="6u 12u(narrower)">
-
-		<section class="box special">
-			<span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
-			<h3>Accumsan integer</h3>
-			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-			<ul class="actions">
-				<li><a href="#" class="button alt">Learn More</a></li>
-			</ul>
-		</section>
-
-	</div>
+  <header class="major"><h2>핫한 내용</h2></header>
+  <div class="6u 12u(narrower)">
+    <section class="box special">
+      <span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+      <h3><++></h3>
+      <p><++></p>
+      <ul class="actions">
+        <li><a href="#" class="button alt">Learn More</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="6u 12u(narrower)">
+    <section class="box special">
+      <span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+      <h3><++></h3>
+      <p><++></p>
+      <ul class="actions">
+        <li><a href="#" class="button alt">Learn More</a></li>
+      </ul>
+    </section>
+  </div>
 </div>
+-->
