@@ -3,7 +3,7 @@ layout: page
 title: About Me
 ---
 
-<p><span class="image right"><img src="/images/pic02.jpg" alt="" /></span>
+<p><span class="image right"><img src="/images/profile.jpg" alt="" /></span>
 서울대학교 전기정보공학부에서 학사과정에 재학 중이며 취미삼아 프로그램 개발을
 합니다. 기초적인 숙련도에서 다양한 언어를 사용해 개발하며, 특히 LaTeX, C++,
 Python과 Kotlin을 주로 사용합니다. 최근에는 LaTeX과 TikZ의 사용, 그리고 Android

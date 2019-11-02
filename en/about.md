@@ -3,7 +3,7 @@ layout: page
 title: About Me
 ---
 
-<p><span class="image right"><img src="/images/pic02.jpg" alt="" /></span>
+<p><span class="image right"><img src="/images/profile.jpg" alt="" /></span>
 I am an undergraduate of the Department of Electric and Computer Engineering at
 Seoul Nat'l University and a hobbyist developer. I work with a handful of
 languages at a basic level, including LaTeX, C++, Python, and Kotlin. In recent
