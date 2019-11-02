@@ -13,5 +13,5 @@ description: Contact Me
   <input type="text" name="name" placeholder="이름"><br>
  	<input type="text" name="email" placeholder="EMAIL 주소"><br>
  	<textarea name="message" placeholder="내용"></textarea><br>
-  <button type="submit">접수</button>
+  <button type="submit" class="button special">접수</button>
 </form>

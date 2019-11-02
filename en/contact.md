@@ -12,5 +12,5 @@ Fill out the form below to contact me via email!</p>
   <input type="text" name="name" placeholder="NAME"><br>
  	<input type="text" name="email" placeholder="EMAIL ADDRESS"><br>
  	<textarea name="message" placeholder="MESSAGE"></textarea><br>
-  <button type="submit">SUBMIT</button>
+  <button type="submit" class="button special">SUBMIT</button>
 </form>
