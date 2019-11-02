@@ -16,13 +16,13 @@ title: Home
   <header class="major"><h2>Featured Links</h2></header>
   <div class="features-row">
     <section>
-      <span class="icon major fa-bolt accent2"></span>
+      <span class="icon major fa-folder-open accent2"></span>
       <h3>Portfolio</h3>
       <p>Proceed to my English Portfolio via the button below: </p>
       <a href="/en/projects/" class="button special">Portfolio (ENG)</a>
     </section>
     <section>
-      <span class="icon major fa-area-chart accent3"></span>
+      <span class="icon major fa-edit accent3"></span>
       <h3>Blog</h3>
       <p>Proceed to my English Blog via the button below: </p>
       <a href="/en/blog/" class="button special">Blog (ENG)</a>
@@ -30,13 +30,13 @@ title: Home
   </div>
   <div class="features-row">
     <section>
-      <span class="icon major fa-cloud accent4"></span>
+      <span class="icon major fa-github accent4"></span>
       <h3>Proceed to GitHub</h3>
       <p>Check out my open-source projects at GitHub :</p>
       <a href="{{ site.github_url }}" class="button special">GitHub Profile</a>
     </section>
     <section>
-      <span class="icon major fa-lock accent5"></span>
+      <span class="icon major fa-envelope accent5"></span>
       <h3>Contact Me</h3>
       <p>Fill out the form here to contact me :</p>
       <a href="/en/contact" class="button special">Contact Me</a>

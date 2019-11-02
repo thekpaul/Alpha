@@ -16,13 +16,13 @@ title: Home
   <header class="major"><h2>주요 링크</h2></header>
   <div class="features-row">
     <section>
-      <span class="icon major fa-bolt accent2"></span>
+      <span class="icon major fa-folder-open accent2"></span>
       <h3>Portfolio</h3>
       <p>아래 버튼을 통해 한국어 포트폴리오로 입장할 수 있습니다 :</p>
       <a href="/ko/projects/" class="button special">Portfolio (ENG)</a>
     </section>
     <section>
-      <span class="icon major fa-area-chart accent3"></span>
+      <span class="icon major fa-edit accent3"></span>
       <h3>Blog</h3>
       <p>아래 버튼을 통해 한국어 블로그로 입장할 수 있습니다 :</p>
       <a href="/ko/blog/" class="button special">Blog (ENG)</a>
@@ -30,13 +30,13 @@ title: Home
   </div>
   <div class="features-row">
     <section>
-      <span class="icon major fa-cloud accent4"></span>
+      <span class="icon major fa-github accent4"></span>
       <h3>Proceed to GitHub</h3>
       <p>오픈소스 프로젝트에 대한 현황은 GitHub에서 확인할 수 있습니다 :</p>
       <a href="{{ site.github_url }}" class="button special">GitHub Profile</a>
     </section>
     <section>
-      <span class="icon major fa-lock accent5"></span>
+      <span class="icon major fa-envelope accent5"></span>
       <h3>Contact Me</h3>
       <p>아래 버튼의 링크에서 개인적인 연락을 남길 수 있습니다 :</p>
       <a href="/ko/contact" class="button special">Contact Me</a>
