@@ -22,7 +22,7 @@ title: Home
       <a href="/ko/projects/" class="button special">포트폴리오 (KOR)</a>
     </section>
     <section>
-      <span class="icon major fa-edit accent3"></span>
+      <span class="icon major fa-pen-nib accent3"></span>
       <h3>Blog</h3>
       <p>아래 버튼을 통해 한국어 블로그로 입장할 수 있습니다 :</p>
       <a href="/ko/blog/" class="button special">블로그 (KOR)</a>

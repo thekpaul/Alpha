@@ -16,7 +16,7 @@ title: Home
   <header class="major"><h2>Featured Links</h2></header>
   <div class="features-row">
     <section>
-      <span class="icon major fa-folder-open accent2"></span>
+      <span class="icon major fa-folder accent2"></span>
       <h3>Portfolio</h3>
       <p>Proceed to my English Portfolio via the button below: </p>
       <a href="/en/projects/" class="button special">Portfolio (ENG)</a>
