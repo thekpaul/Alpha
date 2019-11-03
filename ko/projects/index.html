@@ -11,18 +11,19 @@ title: Projects
   <span class="image featured"><img src="/images/pic01.jpg" alt="" /></span>
 </section>
 <section class="box special features">
-  {% for project in site.data.projects %}
+  {% for project in site.pages %}
+  {% if project.url contains "ko/projects" and project.name != "index.html" %}
   <div class="6u 12u(narrower)">
     <section class="box special">
       <span class="image featured">
         <img src="/images/projects/{{ project.image }}" alt="" /></span>
-      <h3>{{ project.ko_title }}</h3>
-      <p>{{ project.ko_description }}</p>
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
       <ul class="actions">
-        <li><a href="/ko/projects/{{ project.link }}" class="button special">
+        <li><a href="{{ site.url }}{{ project.url }}" class="button special">
           더 알아보기</a></li>
       </ul>
     </section>
   </div>
-  {% endfor %}
+  {% endif %} {% endfor %}
 </section>
