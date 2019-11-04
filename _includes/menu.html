@@ -10,7 +10,7 @@
           {% if item.name == "index.html" %}
           <ul>
             {% for sub in site.pages %}
-            {% if sub.feature and item.url contains sub.url %}
+            {% if sub.feature and sub.url contains item.url %}
             <li><a href="{{ sub.url }}">{{ sub.title }}</a></li>
             {% endif %} {% endfor %}
           </ul>
