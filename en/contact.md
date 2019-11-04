@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact
+show: true
 ---
 
 <p><span class="image right"><img src="/assets/images/pic02.jpg" alt="" /></span>

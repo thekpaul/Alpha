@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 description: Contact Me
+show: true
 ---
 
 <p><span class="image right"><img src="/assets/images/pic02.jpg" alt="" /></span>

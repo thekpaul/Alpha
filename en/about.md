@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+show: true
 ---
 
 <p><span class="image right"><img src="/images/profile.jpg" alt="" /></span>
