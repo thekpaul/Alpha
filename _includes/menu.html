@@ -4,14 +4,14 @@
     <li>
       <a href="#" class="icon fa-angle-down">Menu</a>
       <ul>
-        {% for item in site.data.navigation %}
-        <li><a href="/{{ page.lang }}/{{ item.link }}">{{ item.title }}</a>
-          {% if item.submenu[0] %}
+        {% for item in site.pages %}
+        {% if item.show and item.lang == page.lang %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a>
+          {% if item.name == "index.html" %}
           <ul>
-            {% for sub in item.submenu %}
-            <li><a href="/{{ page.lang }}/{{ item.link }}{{ sub.link }}">
-              {{ sub.title }}</a></li>
-            {% endfor %}
+            {% for sub in site.pages %} {% if item.url contains sub.url %}
+            <li><a href="{{ sub.url }}">{{ sub.title }}</a></li>
+            {% endif %} {% endfor %}
           </ul>
           {% else %}
           {% endif %}
