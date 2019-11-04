@@ -9,14 +9,15 @@
         <li><a href="{{ item.url }}">{{ item.title }}</a>
           {% if item.name == "index.html" %}
           <ul>
-            {% for sub in site.pages %} {% if item.url contains sub.url %}
+            {% for sub in site.pages %}
+            {% sub.feature and if item.url contains sub.url %}
             <li><a href="{{ sub.url }}">{{ sub.title }}</a></li>
             {% endif %} {% endfor %}
           </ul>
           {% else %}
           {% endif %}
         </li>
-        {% endfor %}
+        {% endif %} {% endfor %}
       </ul>
     </li>
     {% if page.lang == "ko" %}
