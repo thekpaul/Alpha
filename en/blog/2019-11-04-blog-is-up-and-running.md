@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Blog is Up and Running!"
+title: Blog is Up and Running!
 description: "The Blog Section is now Up and Running!"
 feature: true
-# image: "<++>"
-# tags: []
 ---
 
 Blog is now up and running! The website, however, is still under construction,

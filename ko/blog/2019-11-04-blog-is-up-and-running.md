@@ -3,8 +3,6 @@ layout: post
 title: "블로그 운영을 시작합니다!"
 description: "블로그 개장합니다!"
 feature: true
-# image: "<++>"
-# tags: []
 ---
 
 블로그 운영을 시작합니다! 아직 누리집이 완성 단계에 있지 못한 관계로 당분간은
