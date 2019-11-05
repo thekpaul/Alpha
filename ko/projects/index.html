@@ -13,7 +13,7 @@ show: true
 </section>
 <section class="box special features">
   {% for project in site.pages %}
-  {% if project.url contains "ko/projects" and project.name != "index.html" %}
+  {% if project.url contains page.url and project.name != page.name %}
   <div class="6u 12u(narrower)">
     <section class="box special">
       <span class="image featured">
