@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Contact
 description: Contact Me
 show: true
