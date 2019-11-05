@@ -6,15 +6,14 @@ show: true
 
 <section class="box special">
   <header class="major">
-    <h2>My Projects</h2>
+    <h2>Blog Entries</h2>
     <p>A List of Blog Entries</p>
   </header>
   <span class="image featured"><img src="/images/pic01.jpg" alt="" /></span>
 </section>
 <section class="box special features">
-  {% for cat in site.categories %}
-  {% if cat[0] == page.lang %}
-    {% for post in cat[1] %}
+  {% for post in site.posts %}
+  {% if post.lang == page.lang %}
     <div class="6u 12u(narrower)">
       <section class="box special">
         <span class="image featured">
@@ -28,7 +27,6 @@ show: true
         </ul>
       </section>
     </div>
-    {% endfor %}
   {% endif %}
   {% endfor %}
 </section>
