@@ -16,11 +16,8 @@
     <h2>{{ page.title }}</h2>
     <p>{{ page.description }}</p>
   </header>
-  {% if page.featured-image %}
-  <span class="image featured"><img src="{{ page.featured-image }}" alt=""></span>
-  {% endif %}
   <div class="box">
-  {{ content }}
+    {{ content }}
   </div>
 </section>
 {% include footer.html %}
