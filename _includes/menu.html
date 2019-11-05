@@ -20,12 +20,15 @@
         {% endif %} {% endfor %}
       </ul>
     </li>
-    {% if page.lang == "ko" %}
-    <li><a href="/en/{{ page.url | slice: 4, page.url.size }}"
-      class="button">Change Language</a></li>
+    {% if page.layout != "post" %}
+      {% if page.lang == "ko" %}
+      <li><a href="/en/{{ page.url | slice: 4, page.url.size }}"
+        class="button">Change Language</a></li>
+      {% else %}
+      <li><a href="/ko/{{ page.url | slice: 4, page.url.size }}"
+        class="button">언어 변경</a></li>
+      {% endif %}
     {% else %}
-    <li><a href="/ko/{{ page.url | slice: 4, page.url.size }}"
-      class="button">언어 변경</a></li>
     {% endif %}
   </ul>
 </nav>
