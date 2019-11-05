@@ -36,7 +36,6 @@ defaults:
       layout: "post"
       lang: "en"
       author: "Paul Kim"
-      permalink: /:title:output_ext
   -
     scope:
       path: "ko"
@@ -52,4 +51,9 @@ defaults:
       layout: "post"
       lang: "ko"
       author: "Paul Kim"
-      permalink: /:title:output_ext
+
+# Settings for Posts
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:title:output_ext
