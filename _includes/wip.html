@@ -1,0 +1,8 @@
+{% for post in site.posts %}
+{% if post.count == page.count and post.lang != page.lang %}
+  {% if page.lang == "ko" %}
+  <li><a href="{{ post.url }}" class="button">Change Language</a></li>
+  {% else %}
+  <li><a href="{{ post.url }}" class="button">언어 변경</a></li>
+  {% endif %}
+{% endif %} {% endfor %}
