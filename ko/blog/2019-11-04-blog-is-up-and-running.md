@@ -1,9 +1,9 @@
 ---
 layout: blog
-title: <++>
+title: "블로그 운영을 시작합니다!"
 description: "블로그 개장합니다!"
 feature: true
-image: "<++>"
+# image: "<++>"
 # tags: []
 ---
 
