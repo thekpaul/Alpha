@@ -4,16 +4,25 @@
     <li>
       <a href="#" class="icon fa-angle-down">Menu</a>
       <ul>
-        {% for item in site.pages %}
-        {% if item.show and item.lang == page.lang %}
+        {% for item in site.pages | where: "show", "true"%}
+        {% if item.lang == page.lang %}
         <li><a href="{{ item.url }}">{{ item.title }}</a>
-          {% if item.name == "index.html" %}
-          <ul>
-            {% for sub in site.pages %}
-            {% if sub.feature and sub.url contains item.url %}
-            <li><a href="{{ sub.url }}">{{ sub.title }}</a></li>
+          {% if item.name == "index.html" %} {% for stuf in site.pages %}
+          {% if stuf.feature and stuf.url contains item.url %}
+            <ul>
+              {% if item.url contains "blog" %}
+                {% for post in site.posts | where: "feature", "true" %}
+                {% if post.url contains item.url %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endif %} {% endfor %}
+              {% else %}
+                {% for sub in site.pages | where: "feature", "true" %}
+                {% if sub.url contains item.url %}
+                <li><a href="{{ sub.url }}">{{ sub.title }}</a></li>
+                {% endif %} {% endfor %}
+              {% endif %}
+            </ul> {% break %}
             {% endif %} {% endfor %}
-          </ul>
           {% else %}
           {% endif %}
         </li>
@@ -29,6 +38,16 @@
         class="button">언어 변경</a></li>
       {% endif %}
     {% else %}
+    <!--
+      {% for post in site.posts %}
+      {% if post.count == page.count and post.lang != page.lang %}
+        {% if page.lang == "ko" %}
+        <li><a href="{{ post.url }}" class="button">Change Language</a></li>
+        {% else %}
+        <li><a href="{{ post.url }}" class="button">언어 변경</a></li>
+        {% endif %}
+      {% endif %} {% endfor %}
+    -->
     {% endif %}
   </ul>
 </nav>
