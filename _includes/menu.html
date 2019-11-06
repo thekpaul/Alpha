@@ -17,7 +17,7 @@
                 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                 {% endif %} {% endfor %}
               {% else %}
-                {% assign subs = site.subs | sort: 'title' %}
+                {% assign subs = site.pages | sort: 'title' %}
                 {% for sub in subs %}
                 {% if sub.feature and sub.url contains item.url %}
                 <li><a href="{{ sub.url }}">{{ sub.title }}</a></li>
