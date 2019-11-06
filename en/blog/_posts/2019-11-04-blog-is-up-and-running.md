@@ -6,5 +6,5 @@ count: 1
 ---
 
 Blog is now up and running! The website, however, is still under construction,
-and theremore maintenance of all contents including this post will not actively
+and therefore maintenance of all contents including this post will not actively
 be proceeded for the time being.
