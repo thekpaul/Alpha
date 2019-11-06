@@ -1,7 +1,7 @@
 <nav id="nav">
   <ul>
     <li>
-      {% if page.path == "/{{ page.lang }}/index.html" %} <a href="/">Up One Level</a>
+      {% if page.url == "/{{ page.lang }}/" %} <a href="/">Up One Level</a>
       {% else %} <a href="/{{ page.lang }}/">Home</a> {% endif %}
     </li>
     <li>
