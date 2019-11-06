@@ -11,8 +11,7 @@ show: true
   <span class="image featured"><img src="/images/pic01.jpg" alt="" /></span>
 </section>
 <section class="box special features">
-  {% assign posts = site.posts | where: "lang", "ko" | sort: 'count' %}
-  {% for post in posts %}
+  {% for post in site.posts %} {% if post.lang == "ko" %}
   <div class="6u 12u(narrower)">
     <section class="box special">
       <span class="image featured">
@@ -26,5 +25,5 @@ show: true
       </ul>
     </section>
   </div>
-  {% endfor %}
+  {% endif %} {% endfor %}
 </section>
