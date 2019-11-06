@@ -1,0 +1,30 @@
+---
+title: Blog
+feature: true
+---
+
+<section class="box special">
+  <header class="major">
+    <h2>Tag: {{ page.title }}</h2>
+    <p>A List of Blog Entries of the tag "{{ page.title }}".</p>
+  </header>
+  <span class="image featured"><img src="/images/pic01.jpg" alt="" /></span>
+</section>
+<section class="box special features">
+  {% for post in site.posts | %}
+  {% if post.lang == "en" and post.tag == {{ page.title }} %}
+  <div class="6u 12u(narrower)">
+    <section class="box special">
+      <span class="image featured">
+        <img src="/images/posts/{{ post.image }}" alt="No Featured Image" />
+      </span>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.description }}</p>
+      <ul class="actions">
+        <li><a href="{{ post.url }}" class="button special">
+          Find Out More</a></li>
+      </ul>
+    </section>
+  </div>
+  {% endif %} {% endfor %}
+</section>
