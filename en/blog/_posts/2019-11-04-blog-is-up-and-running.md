@@ -2,7 +2,7 @@
 title: "Blog is Up and Running!"
 description: "The Blog Section is now Up and Running!"
 feature: true
-image: "bloginit.png"
+image: "bloginit.jpg"
 count: 1
 ---
 
