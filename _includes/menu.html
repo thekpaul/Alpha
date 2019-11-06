@@ -11,24 +11,12 @@
         {% if item.show and item.lang == page.lang %}
         <li><a href="{{ item.url }}">{{ item.title }}</a>
           {% if item.name == "index.html" %}
-          {% assign stufs = site.pages | concat: site.posts %}
-          {% for stuf in stufs %} {% if stuf.feature and stuf.url contains item.url %}
-            <ul>
-              {% if item.url contains "blog" %}
-                {% assign posts = site.posts | where: 'lang', {{ page.lang }} | sort: 'count' %}
-                {% for post in posts %}
-                {% if post.feature and post.lang == page.lang %}
-                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                {% endif %} {% endfor %}
-              {% else %}
-                {% assign subs = site.pages | sort: 'title' %}
-                {% for sub in subs %}
-                {% if sub.feature and sub.url contains item.url %}
-                <li><a href="{{ sub.url }}">{{ sub.title }}</a></li>
-                {% endif %} {% endfor %}
-              {% endif %}
-            </ul> {% break %}
+          <ul>
+            {% for sub in pages %}
+            {% if sub.feature and sub.url contains item.url %}
+            <li><a href="{{ sub.url }}">{{ sub.title }}</a></li>
             {% endif %} {% endfor %}
+          </ul>
           {% else %}
           {% endif %}
         </li>
