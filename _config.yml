@@ -16,6 +16,8 @@ github_url: "https://www.github.com/thekpaul"
 facebook_url: "https://fb.me/thekpaul/"
 instagram_url: "https://www.instagram.com/thekpaul.dev"
 linkedin_url: "https://www.linkedin.com/in/thekpaul"
+stackoverflow_url: "https://stackoverflow.com/users/6834127/paul-kim"
+stackexchange_url: "https://stackexchange.com/users/9195167/paul-kim"
 
 # Build settings
 markdown: kramdown
