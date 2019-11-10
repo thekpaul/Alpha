@@ -13,8 +13,9 @@ font-awesome-icon-logo:
 
 # Social settings
 github_url: "https://www.github.com/thekpaul"
-facebook_url: "https://www.facebook.com/profile.php?id=100023550311260"
+facebook_url: "https://fb.me/thekpaul/"
 instagram_url: "https://www.instagram.com/thekpaul.dev"
+linkedin_url: "https://www.linkedin.com/in/thekpaul"
 
 # Build settings
 markdown: kramdown
