@@ -3,8 +3,8 @@ title: "Paul Kim"
 email: "thekpaul@outlook.com"
 description: "A Free Developer"
 baseurl: ""
-url: "https://thekpaul.github.io/"
-home: "https://thekpaul.github.io/" # The Full URL for Site HOME
+url: "https://thekpaul.dev/"
+home: "https://thekpaul.dev/" # The Full URL for Site HOME
 permalink: ":path"
 
 # Logo settings
@@ -14,7 +14,7 @@ font-awesome-icon-logo:
 # Social settings
 github_url: "https://www.github.com/thekpaul"
 facebook_url: "https://www.facebook.com/profile.php?id=100023550311260"
-instagram_url: "https://www.instagram.com/the_kpaul"
+instagram_url: "https://www.instagram.com/thekpaul.dev"
 
 # Build settings
 markdown: kramdown
