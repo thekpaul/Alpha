@@ -3,6 +3,7 @@ title: "Blog is Up and Running!"
 description: "The Blog Section is now Up and Running!"
 feature: true
 image: "bloginit.jpg"
+tag: [tag]
 count: 1
 ---
 
