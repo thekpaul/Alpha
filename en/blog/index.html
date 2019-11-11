@@ -21,7 +21,7 @@ show: true
       <p>{{ post.description }}</p>
       {% if post.tag %}<ul class="tags">
         {% for tag in post.tag %}
-        <li><a href="{{ post.tag }}">{{ post.tag }}</a></li>
+        <li><a href="{{ post.tag }}">#{{ post.tag }}</a></li>
         {% endfor %}
       </ul>{% endif %}
       <ul class="actions">
