@@ -19,6 +19,11 @@ show: true
       </span>
       <h3>{{ post.title }}</h3>
       <p>{{ post.description }}</p>
+      {% if post.tag %}<ul class="tags">
+        {% for tag in post.tag %}
+        <li><a href="{{ post.tag }}">{{ post.tag }}</a></li>
+        {% endfor %}
+      </ul>{% endif %}
       <ul class="actions">
         <li><a href="{{ post.url }}" class="button special">
           Find Out More</a></li>
