@@ -116,6 +116,10 @@ show: false
       <li><a href="{{ site.stackoverflow_url}}" class="icon fa-stack-overflow">
         <span class="label">Stack Overflow</span></a></li>
       {% endif %}
+      {% if site.devto_url %}
+      <li><a href="{{ site.devto_url}}" class="icon fa-dev">
+        <span class="label">DEV.to</span></a></li>
+      {% endif %}
     </ul>
     <ul class="copyright">
       <li>&copy; {{ site.title }}. All rights reserved.</li>
