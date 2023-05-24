@@ -5,10 +5,11 @@ show: true
 
 <p><span class="image right"><img src="/images/profile.jpg" alt="" /></span>
 I am an undergraduate of the Department of Electric and Computer Engineering at
-Seoul Nat'l University and a hobbyist developer. I work with a handful of
-languages at a basic level, including LaTeX, C++, Python, and Kotlin. In recent
-weeks my interests have been focused on LaTeX and TikZ usage and Android App
-Development.</p>
+Seoul Nat'l University, mainly interested in hardware design and system
+programming. I have been involved in several projects, including my graduation
+project concerning basic hardware design and optimisation of an SRCNN
+accelerator. I am also a hobbyist developer with experience in LaTeX, Python
+and HTML/CSS.</p>
 
 <hr class="major" />
 
@@ -16,16 +17,26 @@ Development.</p>
 ### Current
 - Undergraduate at the **Department of Electrical & Computer Engineering at
   Seoul National University** (since 2018)
-- Part of [**Tejava Studio**][1], a group of developers and trainees.
+  - Expected to graduate in 2024
+  - Areas of Interest: Digital Systems Hardware Design and Basic Systems
+    Programming
+  - Graduation Project: Optimising the CNN Architecture with Hardware Design
+- Student Intern at **[System Semiconductor Engineering for AI, Seoul National
+  University][1]** (since Jan. 2023)
+  - Research Area: Optimising the CNN Architecture with Hardware Design
+- FPGA Engineer Intern for **NeuroRealityVision** (since Mar. 2023)
 
 ### Past
+- KATUSA, Human Resources Specialist (42A) of 94th Military Police Battalion,
+  Pyeongtaek, Republic of Korea
+  - Mandatory Military Service as a
+    Korean Augmentation to the United States Army (KATUSA) Agent
 - Graduate of Sangmoon High School (2015 - 2017)
 
 <hr class="major" />
 
 ## Interests
-- LaTeX and TikZ Usage and Package Development (see [here][2])
-- Android App Development
+- Digital Systems Hardware Design
+- System Programming
 
-  [1]: https://snuece.github.io/
-  [2]: https://thekpaul.github.io/en/projects/latex-overdraw
+  [1]: https://ssai.snu.ac.kr/en/
