@@ -21,12 +21,12 @@ and HTML/CSS.</p>
   - Areas of Interest: Digital Systems Hardware Design and Basic Systems
     Programming
   - Graduation Project: Optimising the CNN Architecture with Hardware Design
-- Student Intern at **[System Semiconductor Engineering for AI, Seoul National
-  University][1]** (since Jan. 2023)
-  - Research Area: Optimising the CNN Architecture with Hardware Design
 - FPGA Engineer Intern for **NeuroRealityVision** (since Mar. 2023)
 
 ### Past
+- Student Intern at **[System Semiconductor Engineering for AI, Seoul National
+  University][1]** (Jan. 2023 - Jun. 2023)
+  - Research Area: Optimising the CNN Architecture with Hardware Design
 - KATUSA, Human Resources Specialist (42A) of 94th Military Police Battalion,
   Pyeongtaek, Republic of Korea
   - Mandatory Military Service as a
